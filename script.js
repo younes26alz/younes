@@ -13,7 +13,7 @@ async function getImage() {
     button.disabled = true;
 
     try {
-        // استخدام خدمة مجانية أخرى
+        
         const prompt = encodeURIComponent(inp.value);
         const imageUrl = `https://image.pollinations.ai/prompt/${prompt}`;
         
@@ -27,7 +27,7 @@ async function getImage() {
         img.style.borderRadius = '10px';
         imageDivs[0].appendChild(img);
         
-        // تحميل الصورة
+        3
         img.onload = () => alert("✅ تم توليد الصورة بنجاح!");
         img.onerror = () => alert("❌ فشل في تحميل الصورة");
         
